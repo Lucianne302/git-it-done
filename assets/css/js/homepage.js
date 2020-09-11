@@ -10,9 +10,9 @@ var displayRepos = function(repos, searchTerm) {
         repoContainerEl.textContent = "No repositories found.";
         return;
     }
-    
+
     repoContainerEl.textContent = "";
-    repoSearchTerm.textContent = searchTerm;
+    repoSearchTermEl.textContent = searchTerm;
 
     //loop over repos
     for (var i = 0; i< repos.length; i++) {

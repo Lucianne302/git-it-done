@@ -23,12 +23,13 @@ var getRepoIssues = function(repo) {
     });   
 }
 
-getRepoIssues("facebook/react");
+//getRepoIssues("facebook/react");
 
 var getRepoName = function() {
     // grab repo name from url query string
     var queryString = document.location.search;
     var repoName = queryString.split("=")[1];
+    console.log(repoName);
 
     if(repoName) {
         // display repo name on the page
